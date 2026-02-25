@@ -5,7 +5,7 @@ export default function ThankYouPage() {
   const navigate = useNavigate();
 
   // Use the same public PDF you already deploy from /public
-  const pdfUrl = "/The_Executive_Advantage_v3.pdf";
+  const pdfUrl = "/executive-advantage.pdf";
 
   useEffect(() => {
     const t = setTimeout(() => {
