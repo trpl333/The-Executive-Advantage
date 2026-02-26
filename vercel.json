@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/The_Executive_Advantage_v3.pdf",
+      "destination": "/executive-advantage.pdf",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
