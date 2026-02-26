@@ -11,7 +11,7 @@ export default function ThankYouPage() {
     const t = setTimeout(() => {
       // Same-tab navigation (not a popup)
       window.location.assign(pdfUrl);
-    }, 800);
+    }, 2000);
 
     return () => clearTimeout(t);
   }, []);
