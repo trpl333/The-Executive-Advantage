@@ -97,9 +97,12 @@ export default function HomePage() {
       body.append('bottleneck', formData.bottleneck);
       body.append('agree', formData.agree ? 'Yes' : 'No');
 
-      const res = await fetch('https://readdy.ai/api/form/d6fm6ian5jm489bu5n8g', {
+      const res = await fetch('https://formspree.io/f/mlgwzgbv', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
         body: body.toString(),
       });
 
