@@ -6,6 +6,7 @@ export default function ThankYouPage() {
 
   // Use the same public PDF you already deploy from /public
   const pdfUrl = "/executive-advantage.pdf";
+  const linkedinUrl = "https://www.linkedin.com/in/john-peterson-mba-4b42b016/";
 
   useEffect(() => {
     const t = setTimeout(() => {
@@ -62,6 +63,15 @@ export default function ThankYouPage() {
             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border border-white/25 text-white/85 text-sm font-medium rounded-md hover:border-white/50 hover:text-white hover:bg-white/5 transition-all cursor-pointer whitespace-nowrap"
           >
             <i className="ri-mail-line text-base"></i>
+            <a
+              href={linkedinUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#0A66C2] text-white text-sm font-semibold rounded-md hover:opacity-90 transition cursor-pointer whitespace-nowrap shadow-md"
+            >
+              <i className="ri-linkedin-box-fill text-base"></i>
+              Connect on LinkedIn
+            </a>
             Email John
           </a>
         </div>
