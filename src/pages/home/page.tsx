@@ -272,6 +272,29 @@ export default function HomePage() {
             not random experimentation.
           </p>
 
+          {/* Video (autoplay muted) */}
+          <div
+            className="max-w-4xl mx-auto mb-12"
+            style={{
+              borderRadius: 16,
+              overflow: "hidden",
+              border: "1px solid rgba(255,255,255,0.12)",
+              boxShadow: "0 16px 48px rgba(0,0,0,0.25)",
+              background: "rgba(255,255,255,0.04)",
+            }}
+          >
+            <video
+              src="https://personal-sam-artifacts.sfo3.cdn.digitaloceanspaces.com/Johns%20Personal%20Files/Videos/The%20Executive%20Advantage_%20AI%20%26%20Execution_1080p_caption.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="metadata"
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </div>
+
           {/* Dual CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-16">
             <button
